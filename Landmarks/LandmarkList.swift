@@ -8,17 +8,17 @@ A view showing a list of landmarks.
 import SwiftUI
 
 struct LandmarkList: View {
-    @State var showFavoiteOnly = false
-    
+    @EnvironmentObject var userData: UserData
+
     var body: some View {
         NavigationView {
             List {
-                Toggle(isOn: $showFavoiteOnly) {
+                Toggle(isOn: $userData.showFavoritesOnly) {
                     Text("Favorite Only")
                 }
 
-                ForEach(landmarkData) { landmark in
-                    if !self.showFavoiteOnly || landmark.isFavorite {
+                ForEach(userData.landmarks) { landmark in
+                    if !self.userData.showFavoritesOnly || landmark.isFavorite {
                         NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
                             LandmarkRow(landmark: landmark)
                         }
@@ -34,8 +34,7 @@ struct LandmarkList_Previews: PreviewProvider {
     static var previews: some View {
         ForEach(["iPhone SE", "iPhone XS Max"], id: \.self) { deviceName in
             LandmarkList()
-                .previewDevice(PreviewDevice(rawValue: deviceName))
-                .previewDisplayName(deviceName)
+            .environmentObject(UserData())
         }
     }
 }
