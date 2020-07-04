@@ -8,11 +8,15 @@ A view showing a list of landmarks.
 import SwiftUI
 
 struct LandmarkList: View {
+    @State var showFavoiteOnly = false
+    
     var body: some View {
         NavigationView {
             List(landmarkData) { landmark in
-                NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
-                    LandmarkRow(landmark: landmark)
+                if !self.showFavoiteOnly || landmark.isFavorite {
+                    NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
+                        LandmarkRow(landmark: landmark)
+                    }
                 }
             }
             .navigationBarTitle(Text("Landmarks"))
