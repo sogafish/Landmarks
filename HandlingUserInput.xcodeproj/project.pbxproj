@@ -10,6 +10,7 @@
 		3F5333D224B0E3C50092F56B /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5333D124B0E3C50092F56B /* UserData.swift */; };
 		3F88C28E24B386150038BFA2 /* BadgeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88C28D24B386150038BFA2 /* BadgeBackground.swift */; };
 		3F88C29424B38A120038BFA2 /* BaseSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88C29324B38A110038BFA2 /* BaseSymbol.swift */; };
+		3F88C29624B38B5A0038BFA2 /* RotatedBadgeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88C29524B38B5A0038BFA2 /* RotatedBadgeSymbol.swift */; };
 		3FA59F5B24B35C9500441978 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA59F5A24B35C9500441978 /* Badge.swift */; };
 		3FA59F5D24B35CF900441978 /* HexagonParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA59F5C24B35CF900441978 /* HexagonParameters.swift */; };
 		B7394866229F194000C47603 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7394865229F194000C47603 /* AppDelegate.swift */; };
@@ -43,6 +44,7 @@
 		3F5333D124B0E3C50092F56B /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		3F88C28D24B386150038BFA2 /* BadgeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeBackground.swift; sourceTree = "<group>"; };
 		3F88C29324B38A110038BFA2 /* BaseSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSymbol.swift; sourceTree = "<group>"; };
+		3F88C29524B38B5A0038BFA2 /* RotatedBadgeSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatedBadgeSymbol.swift; sourceTree = "<group>"; };
 		3FA59F5A24B35C9500441978 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
 		3FA59F5C24B35CF900441978 /* HexagonParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonParameters.swift; sourceTree = "<group>"; };
 		6AF17FBC250C47AD4B5BC2FB /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = ../Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
@@ -127,6 +129,8 @@
 				3FA59F5A24B35C9500441978 /* Badge.swift */,
 				3F88C28D24B386150038BFA2 /* BadgeBackground.swift */,
 				3FA59F5C24B35CF900441978 /* HexagonParameters.swift */,
+				3F88C29324B38A110038BFA2 /* BaseSymbol.swift */,
+				3F88C29524B38B5A0038BFA2 /* RotatedBadgeSymbol.swift */,
 				B739487D229F1C0100C47603 /* Supporting Views */,
 				B7394883229F291A00C47603 /* Resources */,
 				B739486B229F194200C47603 /* Assets.xcassets */,
@@ -134,7 +138,6 @@
 				B7394873229F194200C47603 /* Info.plist */,
 				B739486D229F194200C47603 /* Preview Content */,
 				3F5333D124B0E3C50092F56B /* UserData.swift */,
-				3F88C29324B38A110038BFA2 /* BaseSymbol.swift */,
 			);
 			path = Landmarks;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				B739487A229F1B3F00C47603 /* CircleImage.swift in Sources */,
 				B739487C229F1B6800C47603 /* MapView.swift in Sources */,
 				B73948A1229F2E1F00C47603 /* LandmarkList.swift in Sources */,
+				3F88C29624B38B5A0038BFA2 /* RotatedBadgeSymbol.swift in Sources */,
 				B7394868229F194000C47603 /* SceneDelegate.swift in Sources */,
 				3F88C28E24B386150038BFA2 /* BadgeBackground.swift in Sources */,
 				B739486A229F194000C47603 /* LandmarkDetail.swift in Sources */,
